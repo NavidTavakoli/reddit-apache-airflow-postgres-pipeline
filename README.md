@@ -253,7 +253,7 @@ If you run Airflow **API server** (v3.0.6) without the classic webserver UI, use
 | `LIMIT`                | Max posts per fetch                                     | `10`                         |
 | `REDDIT_UA`            | Requests User-Agent                                     | sensible default             |
 | `OUTPUT_DIR`           | CSV output dir                                          | `/home/tahmast/airflow/data` |
-| `GDPR_SALT`            | **Required in prod**. Salt for hashing sensitive fields | `dev-salt-change-me`         |
+| `GDPR_SALT`            | **Required in prod**. Salt for hashing sensitive fields | write-your-salt-here😉        |
 | `CRON_SCHEDULE`        | Fetch DAG schedule (cron)                               | `*/10 * * * *`               |
 | `DATA_DIR`             | Base data dir                                           | `$AIRFLOW_HOME/data`         |
 | `COMBINE_DIR`          | Combined CSV dir                                        | `$DATA_DIR/combined`         |
@@ -314,20 +314,19 @@ flowchart TD
 ## PostgreSQL Export — Sample Preview
 
 > File: `redit_table_202509091827.csv` (exported from `reddit_schema.redit_table` via `\copy` / DBeaver).
->  Notes: `author_hash` is salted SHA-256; `permalink` is public; duplicates prevented by `thing_key` (UPSERT).
 
-| thing_key (hash) | thing_type | id      | created_at           | score | num_comments | title_sanitized                              | author_hash (hash) | permalink                                                    | subreddit   | flair_text |
-| ---------------- | ---------- | ------- | -------------------- | ----- | ------------ | -------------------------------------------- | ------------------ | ------------------------------------------------------------ | ----------- | ---------- |
-| `b0f9…1a7`       | t3         | 1xyzab1 | 2025-09-09T16:58:21Z | 42    | 13           | Visiting Rome in October — tips?             | `a4c9…d2e`         | https://www.reddit.com/r/italytravel/comments/1xyzab1/visiting_rome… | italytravel | Question   |
-| `c2aa…9bf`       | t3         | 1xyzae2 | 2025-09-09T16:49:03Z | 18    | 5            | Best Amalfi Coast base without a car         | `9be1…77c`         | https://www.reddit.com/r/italytravel/comments/1xyzae2/best_amalfi… | italytravel | Advice     |
-| `8d1e…473`       | t3         | 1xyxzt9 | 2025-09-09T16:40:10Z | 7     | 0            | Train from Milan to Lake Como early morning? | `0f22…a1b`         | https://www.reddit.com/r/italytravel/comments/1xyxzt9/train_from… | italytravel | Transport  |
+| primary key | type | id_hash | created_at     | score | comments | title                                                        | author_hash | permalink_hash | subreddit   | flair          |
+| ----------- | ---- | ------- | -------------- | ----- | -------- | ------------------------------------------------------------ | ----------- | -------------- | ----------- | -------------- |
+| 928092      | t3   | c39634  | 9/9/2025 18:42 | 1     | 5        | Is it safe to drive in February through Dolomites Region     | 7dae71      | 8e36e0         | ItalyTravel | Transportation |
+| 6944d3      | t3   | 6189a6  | 9/9/2025 18:17 | 1     | 6        | Looking for recommendations for which city to hang out for a week in late November as a mid-30s vegetarian couple | 7578b0      | 9897ee         | ItalyTravel | Other          |
+| 2934cc      | t3   | 7912d5  | 9/9/2025 18:09 | 1     | 3        | Itabus is it reliable?                                       | 71e304      | ad5463         | ItalyTravel | Transportation |
 
 <sub>*(Rows above are illustrative; actual values come from the CSV.)*</sub>
 
 ## Privacy notes
 
-- **Hashed**: `author` → `author_hash` (with `GDPR_SALT`).
-- **Not hashed**: `id`, `permalink`, `subreddit`, `title_sanitized`, etc.
+- **Hashed**: `author_hash` `id`, `permalink`,(with `GDPR_SALT`).
+- **Not hashed**:  `subreddit`, `title_sanitized`, etc.
 - **Titles** are sanitized to remove emails and long digit sequences before writing.
 
 ## Troubleshooting
