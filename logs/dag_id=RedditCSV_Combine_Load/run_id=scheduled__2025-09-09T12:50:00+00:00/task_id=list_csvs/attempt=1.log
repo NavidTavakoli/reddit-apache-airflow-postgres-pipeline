@@ -1,7 +1,0 @@
-{"timestamp":"2025-09-09T12:50:01.248649","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2025-09-09T12:50:01.250047","level":"info","event":"Filling up the DagBag from /home/tahmast/airflow/dags/reddit_csv_combine_load.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2025-09-09T12:50:01.566342","level":"info","event":"Found 0 CSV(s): []","logger":"airflow.utils.log.logging_mixin.LoggingMixin"}
-{"timestamp":"2025-09-09T12:50:01.727194","level":"info","event":"Done. Returned value was: False","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
-{"timestamp":"2025-09-09T12:50:01.727597","level":"info","event":"Condition result is False","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
-{"timestamp":"2025-09-09T12:50:01.727899","level":"info","event":"Skipping downstream tasks","logger":"airflow.task.operators.airflow.providers.standard.operators.python.ShortCircuitOperator"}
-{"timestamp":"2025-09-09T12:50:01.960296","level":"info","event":"Skipping downstream tasks.","logger":"task"}
