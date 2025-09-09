@@ -1,0 +1,24 @@
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2025-09-09 22:11:00 +0200] [7813] [INFO] Starting gunicorn 23.0.0
+[2025-09-09T22:11:00.445+0200] {scheduler_job_runner.py:1022} INFO - Starting the scheduler
+[2025-09-09 22:11:00 +0200] [7813] [INFO] Listening at: http://[::]:8793 (7813)
+[2025-09-09 22:11:00 +0200] [7813] [INFO] Using worker: sync
+[2025-09-09T22:11:00.458+0200] {executor_loader.py:269} INFO - Loaded executor: :LocalExecutor:
+[2025-09-09 22:11:00 +0200] [7814] [INFO] Booting worker with pid: 7814
+[2025-09-09 22:11:00 +0200] [7815] [INFO] Booting worker with pid: 7815
+[2025-09-09T22:11:00.540+0200] {scheduler_job_runner.py:2218} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-09-09T22:16:00.721+0200] {scheduler_job_runner.py:2218} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-09-09T22:20:00.433+0200] {scheduler_job_runner.py:1702} INFO - DAG Fetch--Reddit--GDPR--CSV is at (or above) max_active_runs (1 of 1), not creating any more runs
+[2025-09-09T22:20:00.722+0200] {scheduler_job_runner.py:461} INFO - 1 tasks up for execution:
+	<TaskInstance: Fetch--Reddit--GDPR--CSV.Get-SubReddit-Italytravel-CSV scheduled__2025-09-09T20:20:00+00:00 [scheduled]>
+[2025-09-09T22:20:00.724+0200] {scheduler_job_runner.py:533} INFO - DAG Fetch--Reddit--GDPR--CSV has 0/16 running and queued tasks
+[2025-09-09T22:20:00.725+0200] {scheduler_job_runner.py:672} INFO - Setting the following tasks to queued state:
+	<TaskInstance: Fetch--Reddit--GDPR--CSV.Get-SubReddit-Italytravel-CSV scheduled__2025-09-09T20:20:00+00:00 [scheduled]>
+[2025-09-09T22:20:00.731+0200] {scheduler_job_runner.py:778} INFO - Trying to enqueue tasks: [<TaskInstance: Fetch--Reddit--GDPR--CSV.Get-SubReddit-Italytravel-CSV scheduled__2025-09-09T20:20:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+[2025-09-09T22:20:00.762+0200] {local_executor.py:61} INFO - Worker starting up pid=8121
+2025-09-09 22:20:00 [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend'] count=1
+/home/tahmast/myenv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:476 DeprecationWarning: This process (pid=8121) is multi-threaded, use of fork() may lead to deadlocks in the child.

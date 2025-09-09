@@ -1,0 +1,31 @@
+[2025-09-09 22:10:17] Stopping Airflow components…
+[22:10:17] API Server: process not running.
+[22:10:17] Webserver: pidfile not found
+[22:10:17] Stopping Scheduler (PID 3100)…
+[22:10:18] Force killing Scheduler (PID 3100)…
+[22:10:19] Scheduler stopped.
+[22:10:19] Stopping DAG Processor (PID 3192)…
+[22:10:20] Force killing DAG Processor (PID 3192)…
+[22:10:21] DAG Processor stopped.
+[22:10:21] Stopping Triggerer (PID 3296)…
+[22:10:22] Force killing Triggerer (PID 3296)…
+[22:10:23] Triggerer stopped.
+[22:10:23] Stopping API Server by pattern: airflow api (PIDs: 4193)
+[22:10:25] Force killing API Server (PIDs: 4193)
+[22:10:25] API Server (gunicorn): not found by pattern
+[22:10:25] API Server (uvicorn): not found by pattern
+[22:10:25] Webserver: not found by pattern
+[22:10:25] Webserver (gunicorn): not found by pattern
+[22:10:25] Stopping Scheduler by pattern: airflow scheduler (PIDs: 4194)
+[22:10:26] Force killing Scheduler (PIDs: 4194)
+[22:10:26] Stopping DAG Processor by pattern: airflow dag-processor|airflow dag_processor (PIDs: 4196)
+[22:10:27] Stopping Triggerer by pattern: airflow triggerer (PIDs: 4195
+4217)
+[22:10:28] No listeners on port 8080
+[22:10:28] No listeners on port 8793
+[22:10:28] Killing processes on port 8794: 3886
+3890
+3893
+[22:10:29] No listeners on port 8974
+[2025-09-09 22:10:29] All components stopped.
+ see you soon!

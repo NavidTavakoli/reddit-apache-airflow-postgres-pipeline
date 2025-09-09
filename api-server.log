@@ -1,0 +1,74 @@
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2025-09-09T22:10:59.537+0200] {api_server_command.py:119} INFO - Running the uvicorn with:
+Apps: all
+Workers: 4
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: -
+=================================================================
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+INFO:     Started parent process [7790]
+INFO:     Waiting for child process [7805]
+INFO:     Child process [7805] died
+INFO:     Started server process [7807]
+INFO:     Waiting for application startup.
+INFO:     Started server process [7806]
+INFO:     Application startup complete.
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [7808]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [7828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47364 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47364 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46930 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46946 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2025-09-08T20%3A11%3A15.673Z&timestamp_lte=2025-09-09T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46936 - "GET /api/v2/importErrors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46930 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /ui/dashboard/historical_metrics_data?start_date=2025-09-08T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /ui/dashboard/historical_metrics_data?start_date=2025-09-08T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /ui/dashboard/historical_metrics_data?start_date=2025-09-08T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /ui/dashboard/historical_metrics_data?start_date=2025-09-08T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /ui/dashboard/historical_metrics_data?start_date=2025-09-08T20%3A11%3A15.673Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46942 - "GET /api/v2/dagTags?limit=10&offset=0&order_by=name&tag_name_pattern= HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46926 - "GET /api/v2/dags?limit=50&offset=0&order_by=dag_display_name HTTP/1.1" 200 OK
+[2025-09-09T22:11:31.276+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.278+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.279+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.280+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.281+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.281+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.282+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.283+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.284+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.285+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.285+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.286+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.286+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.287+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.288+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.288+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.289+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.290+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.291+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.292+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:31.293+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+INFO:     127.0.0.1:46924 - "GET /ui/dags/recent_dag_runs?dag_runs_limit=14&limit=50&offset=0 HTTP/1.1" 200 OK

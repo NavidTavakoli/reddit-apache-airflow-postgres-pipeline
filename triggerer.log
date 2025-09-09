@@ -1,0 +1,19 @@
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2025-09-09 22:11:00 +0200] [7809] [INFO] Starting gunicorn 23.0.0
+[2025-09-09 22:11:00 +0200] [7809] [INFO] Listening at: http://[::]:8794 (7809)
+[2025-09-09 22:11:00 +0200] [7809] [INFO] Using worker: sync
+[2025-09-09 22:11:00 +0200] [7810] [INFO] Booting worker with pid: 7810
+[2025-09-09 22:11:00 +0200] [7811] [INFO] Booting worker with pid: 7811
+[2025-09-09T22:11:00.817+0200] {triggerer_job_runner.py:160} INFO - Starting the triggerer
+2025-09-09 22:12:01 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:13:01 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:14:01 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:15:01 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:16:01 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:17:02 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:18:02 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]
+2025-09-09 22:19:02 [info     ] 0 triggers currently running   [airflow.jobs.triggerer_job_runner]

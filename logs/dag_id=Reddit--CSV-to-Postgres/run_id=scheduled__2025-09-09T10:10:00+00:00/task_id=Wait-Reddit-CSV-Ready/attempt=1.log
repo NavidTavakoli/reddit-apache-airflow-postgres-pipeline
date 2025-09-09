@@ -1,0 +1,4 @@
+{"timestamp":"2025-09-09T10:14:39.269647","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-09T10:14:39.270510","level":"info","event":"Filling up the DagBag from /home/tahmast/airflow/dags/Reddit--CSV-to-Postgres.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-09T10:14:39.384634","level":"info","event":"Poking for tasks ['Get-Reddit-Italytravel-CSV'] in dag Reddit--CSV on 2025-09-09T10:10:00+00:00 ... ","logger":"airflow.task.operators.airflow.providers.standard.sensors.external_task.ExternalTaskSensor"}
+{"timestamp":"2025-09-09T10:14:39.432053","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.standard.sensors.external_task.ExternalTaskSensor"}

@@ -1,0 +1,352 @@
+[2025-09-09T22:11:00.209+0200] {settings.py:60} INFO - Configured default timezone UTC
+[2025-09-09T22:11:00.420+0200] {dag_processor_job_runner.py:59} INFO - Starting the Dag Processor Job
+[2025-09-09T22:11:00.421+0200] {manager.py:252} INFO - Processing files using up to 2 processes at a time 
+[2025-09-09T22:11:00.423+0200] {manager.py:253} INFO - Process each file at most once every 30 seconds
+[2025-09-09T22:11:00.428+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:00.451+0200] {manager.py:122} INFO - DAG bundles loaded: dags-folder
+[2025-09-09T22:11:00.452+0200] {manager.py:263} INFO - Checking for new files in bundle dags-folder every 300 seconds
+[2025-09-09T22:11:00.478+0200] {manager.py:534} INFO - Refreshing bundle dags-folder
+[2025-09-09T22:11:00.541+0200] {manager.py:585} INFO - Searching for files in dags-folder at /home/tahmast/airflow/dags
+[2025-09-09T22:11:00.550+0200] {manager.py:587} INFO - Found 2 files for bundle dags-folder
+/home/tahmast/myenv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:476 DeprecationWarning: This process (pid=7793) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-09T22:11:01.959+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                        PID  Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------
+dags-folder  Combine_send_to_postgresql.py   7819  0.09s                      0           0
+dags-folder  Fetch_reddit.py                 7820  0.06s                      0           0
+================================================================================
+[2025-09-09T22:11:02.017+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:11:02.118+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:11:02.291+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:11:02.313+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:11:06.351+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:11.408+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:16.475+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:21.561+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:26.646+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:31.718+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:32.133+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.40s            2025-09-09T20:11:02
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.15s            2025-09-09T20:11:02
+================================================================================
+[2025-09-09T22:11:32.219+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:11:32.248+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:11:32.401+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:11:32.417+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:11:37.471+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:42.540+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:47.607+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:52.674+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:11:57.742+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:02.804+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.06s            2025-09-09T20:11:32
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.06s            2025-09-09T20:11:32
+================================================================================
+[2025-09-09T22:12:02.809+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:02.891+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:12:02.907+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:12:02.967+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:12:02.981+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:12:08.035+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:13.106+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:18.173+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:23.243+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:28.311+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:33.375+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.12s            2025-09-09T20:12:02
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.06s            2025-09-09T20:12:02
+================================================================================
+[2025-09-09T22:12:33.381+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:33.473+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:12:33.488+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:12:33.547+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:12:33.565+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:12:38.618+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:43.686+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:48.747+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:53.818+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:12:58.889+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:03.952+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.12s            2025-09-09T20:12:33
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:12:33
+================================================================================
+[2025-09-09T22:13:03.960+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:04.050+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:13:04.069+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:13:04.145+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:13:04.164+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:13:09.216+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:14.286+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:19.357+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:24.427+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:29.496+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:34.020+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.14s            2025-09-09T20:13:04
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.06s            2025-09-09T20:13:04
+================================================================================
+[2025-09-09T22:13:34.567+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:34.637+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:13:34.658+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:13:34.768+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:13:34.784+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:13:39.835+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:44.901+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:49.972+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:13:55.036+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:00.109+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:04.153+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.16s            2025-09-09T20:13:34
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.05s            2025-09-09T20:13:34
+================================================================================
+[2025-09-09T22:14:05.174+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:05.414+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:14:05.432+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:14:05.507+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:14:05.525+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:14:10.580+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:15.652+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:20.715+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:25.789+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:30.861+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:34.243+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.22s            2025-09-09T20:14:05
+dags-folder  Fetch_reddit.py                                                  1           0  0.13s            2025-09-09T20:14:05
+================================================================================
+[2025-09-09T22:14:35.928+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:36.018+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:14:36.038+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:14:36.114+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:14:36.135+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:14:41.188+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:46.255+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:51.320+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:14:56.385+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:01.450+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:04.493+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.15s            2025-09-09T20:14:36
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:14:36
+================================================================================
+[2025-09-09T22:15:06.532+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:06.630+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:15:06.649+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:15:06.735+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:15:06.753+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:15:11.804+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:16.864+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:21.935+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:27.000+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:32.063+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:35.097+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.16s            2025-09-09T20:15:06
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:15:06
+================================================================================
+[2025-09-09T22:15:37.128+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:37.220+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:15:37.237+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:15:37.314+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:15:37.332+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:15:42.380+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:47.449+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:52.516+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:15:57.583+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:02.653+0200] {manager.py:534} INFO - Refreshing bundle dags-folder
+[2025-09-09T22:16:02.750+0200] {manager.py:585} INFO - Searching for files in dags-folder at /home/tahmast/airflow/dags
+[2025-09-09T22:16:02.755+0200] {manager.py:587} INFO - Found 2 files for bundle dags-folder
+[2025-09-09T22:16:05.171+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.14s            2025-09-09T20:15:37
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:15:37
+================================================================================
+[2025-09-09T22:16:07.335+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:16:07.362+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:16:07.437+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:16:07.453+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:16:08.456+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:13.525+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:18.592+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:23.668+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:28.741+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:33.802+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:35.826+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.10s            2025-09-09T20:16:07
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.08s            2025-09-09T20:16:07
+================================================================================
+[2025-09-09T22:16:37.966+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:16:37.983+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:16:38.066+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:16:38.083+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:16:39.084+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:44.155+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:49.216+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:54.290+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:16:59.351+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:04.414+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:06.438+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.15s            2025-09-09T20:16:38
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:16:37
+================================================================================
+[2025-09-09T22:17:08.742+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:17:08.762+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:17:08.839+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:17:08.856+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:17:09.856+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:14.903+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:19.957+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:25.026+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:30.095+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:35.168+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:36.480+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.15s            2025-09-09T20:17:08
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:17:08
+================================================================================
+[2025-09-09T22:17:39.512+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:17:39.530+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:17:39.621+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:17:39.636+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:17:40.638+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:45.700+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:50.768+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:17:55.840+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:00.899+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:05.966+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:06.974+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.17s            2025-09-09T20:17:39
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.10s            2025-09-09T20:17:39
+================================================================================
+[2025-09-09T22:18:10.137+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:18:10.155+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:18:10.252+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:18:10.269+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:18:11.269+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:16.329+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:21.393+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:26.464+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:31.529+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:36.602+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:37.610+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.16s            2025-09-09T20:18:10
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:18:10
+================================================================================
+[2025-09-09T22:18:40.782+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:18:40.800+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:18:40.877+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:18:40.892+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:18:41.888+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:46.964+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:52.030+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:18:57.099+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:02.177+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:07.251+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:08.258+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.14s            2025-09-09T20:18:40
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.06s            2025-09-09T20:18:40
+================================================================================
+[2025-09-09T22:19:11.413+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:19:11.442+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:19:11.518+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:19:11.532+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:19:12.532+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:17.583+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:22.647+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:27.710+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:32.781+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:37.847+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:38.853+0200] {manager.py:756} INFO - 
+================================================================================
+DAG File Processing Stats
+
+Bundle       File Path                      PID    Current Duration      # DAGs    # Errors  Last Duration    Last Run At
+-----------  -----------------------------  -----  ------------------  --------  ----------  ---------------  -------------------
+dags-folder  Fetch_reddit.py                                                  1           0  0.15s            2025-09-09T20:19:11
+dags-folder  Combine_send_to_postgresql.py                                    1           0  0.07s            2025-09-09T20:19:11
+================================================================================
+[2025-09-09T22:19:42.015+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:19:42.034+0200] {dag.py:2236} INFO - Setting next_dagrun for Sending_to_the_PostgreSQL to 2025-09-09 21:05:00+00:00, run_after=2025-09-09 21:05:00+00:00
+[2025-09-09T22:19:42.113+0200] {dag.py:1622} INFO - Sync 1 DAGs
+[2025-09-09T22:19:42.126+0200] {dag.py:2236} INFO - Setting next_dagrun for Fetch--Reddit--GDPR--CSV to 2025-09-09 20:20:00+00:00, run_after=2025-09-09 20:20:00+00:00
+[2025-09-09T22:19:43.134+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:48.195+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:53.259+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
+[2025-09-09T22:19:58.328+0200] {manager.py:531} INFO - Not time to refresh bundle dags-folder
